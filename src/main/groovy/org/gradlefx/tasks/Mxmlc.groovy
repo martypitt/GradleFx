@@ -28,12 +28,13 @@ class Mxmlc extends AbstractMxmlc {
         description = 'Compiles Flex application/module (*.swf) using the mxmlc compiler'
     }
 
+
     @TaskAction
     def compileFlex() {
 		super.compileFlex(ANT_RESULT_PROPERTY, ANT_OUTPUT_PROPERTY, 'Mxmlc', createCompilerArguments())
     }
 
-    private List createCompilerArguments() {
+    protected List createCompilerArguments() {
         List compilerArguments = []
 
         //add every source directory

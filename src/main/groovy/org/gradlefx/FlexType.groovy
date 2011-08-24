@@ -18,5 +18,6 @@ package org.gradlefx
 
 enum FlexType {
     swf,
-    swc
+    swc ,
+    air
 }
